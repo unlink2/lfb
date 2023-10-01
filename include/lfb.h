@@ -1,10 +1,13 @@
 #ifndef lfbH__
 #define lfbH__
 
+#include <stdbool.h>
+
 struct lfb_config {
-  _Bool verbose;
+  bool verbose;
+  bool ignore_case;
 };
 
 int lfb_main(struct lfb_config *cfg);
 
-#endif 
+#endif
